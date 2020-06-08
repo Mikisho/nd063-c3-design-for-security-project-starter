@@ -1,0 +1,37 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+   
+    * Dome 9
+    * Cloudsploit
+    * Prisma Cloud 
+
+### Example vulnerability
+
+    * Configure a security group that allow traffic from ALL/public
+    * AWS Role misconfiguration
+
+##Scan AMI’s or containers for OS vulnerabilities
+
+    * twistlock
+    * clair
+    * aquasec
+
+### Example vulnerability
+
+    * Using an outdated library 
+    * Using depreciated OS versions
+    * allowing root access 
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+
+    * AWS Security Hub
+    * AWS Config 
+    * AWS Inspect
+    * Cloud Trail
+
+### Example vulnerability
+
+    * Poor IAM password policy
+    * Adding unecessary permissions to poilicies and roles
+    * Configuring root accounts to be used for unwanted transactions 

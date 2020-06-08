@@ -1,0 +1,15 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+* Secret s3 bucket is not encrypted
+* All connection ports are open to public (global)
+* The ACL rule defined is allowing traffics to all subnets 
+* All subnets are attached to internet gateway 
+* root (admin) user is easily accesible on EC2 instances 
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+* Modify security groups
+* Only web services needs to be accessible to the world 
+* configure private subnet and NAT gateway
+* Apply encryption for secret s3 bucket 
+* Modify the ACL rule to implenent restrictions accordingly

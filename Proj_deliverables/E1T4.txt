@@ -1,0 +1,9 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Instances have full access to the s3 buckets (have the same IAM policy assigned), which is not a best practice for security.
+In this scenario, both servers could access s3 bucket including the secret recipes. Thus, IAM policy should be changed. 
+
+# Poor practice 2
+As per the architecture diagram, web server under public subnet can access s3 resource using the API keys.
+This makes the resource more vulnerable to malicious attacks, which enables attacker to get data eaisly.

@@ -1,0 +1,9 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+* UnauthorizedAccess:EC2/SSHBruteForce -> give a report providing information that an EC2 instance was involved
+  in brute force attack aimed at obtaining password to ssh services.
+* information about SSH brute force attacks against our instance by providing the ip address by which the attack is coming from.
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+
+* AWS Guard Duty use an information generated from VPC Flow Logs, AWS CloudTrail, Event Logs, and DNS logs inorder to detect different 
+  types of dangerious and mischievous behavior including probs for known vulnerabilities.
